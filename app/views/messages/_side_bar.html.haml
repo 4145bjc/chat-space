@@ -1,0 +1,30 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name
+        KENTA
+      %ul.side-bar__user-name__top-items__icons
+        %li.new-group
+        = link_to "#", class: "top-items__icons" do
+          = icon('far','edit')
+        %li.edit-user
+        = link_to "#", class: "top-items__icons" do
+          = icon('fa','cog')
+      
+  .side-bar__group-list
+    .side-bar__group-list__group
+      .side-bar__group-list__group__group-name
+        techcamp
+      .side-bar__group-list__group__latest-message
+        まだメッセージがありません。
+    .side-bar__group-list__group
+      .side-bar__group-list__group__group-name
+        techexpert
+      .side-bar__group-list__group__latest-message
+        おはよう！
+    .side-bar__group-list__group
+      .side-bar__group-list__group__group-name
+        techmaster
+      .side-bar__group-list__group__latest-message
+        こんにちは！
+          

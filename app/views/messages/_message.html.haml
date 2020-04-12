@@ -1,4 +1,4 @@
-.chat-main__message-list__message
+.chat-main__message-list__message{data: {message: {Id:message.id}}}
   .chat-main__message-list__message__upper-info
     .chat-main__message-list__message__upper-info__talker
       = message.user.name
@@ -8,4 +8,4 @@
     - if message.content.present?
       %p.chat-main__message-list__message__text__content
         = message.content
-    = image_tag message.image.url, class: 'text__image' if message.image.present?
+    = image_tag message.image.url, class: 'chat-main__message-list__message__text__image' if message.image.present?
